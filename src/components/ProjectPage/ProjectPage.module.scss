@@ -1,0 +1,5 @@
+@import "../../styles/constants.scss";
+
+.projectPage {
+    height: calc(100vh - $app_header_height);
+}

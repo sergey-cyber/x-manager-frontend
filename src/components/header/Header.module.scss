@@ -1,0 +1,13 @@
+@import "../../styles/constants.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $app_header_height;
+    border-bottom: solid 1px #000;
+    padding: 0 20px;
+    h1 {
+        margin: 0;
+    }
+}

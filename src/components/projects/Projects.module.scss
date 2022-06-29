@@ -1,0 +1,21 @@
+.projects {
+    padding: 20px;
+}
+
+.projectTitle {
+    cursor: pointer;
+    &:hover {
+        color: rgb(79, 79, 220);
+    }
+}
+
+.header {
+    border: solid 1px #999;
+    margin-bottom: 15px !important;
+}
+
+.createButton {
+    color: green !important;
+    font-size: 30px;
+    cursor: pointer;
+}
