@@ -1,6 +1,7 @@
 {
-    "name": "jira",
-    "version": "0.1.0",
+    "homepage": "http://sergey-cyber.github.io/x-manager-frontend",
+    "name": "x-manager",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "@ant-design/icons": "^4.7.0",
@@ -40,9 +41,11 @@
         "yup": "^0.32.11"
     },
     "scripts": {
-        "start": "react-scripts --optimize_for_size --max_old_space_size=4096 --gc_interval=100 start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start": "react-scripts start",
         "dev": "react-scripts start",
-        "build": "react-scripts --max_old_space_size=4096 build",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
@@ -65,6 +68,7 @@
         ]
     },
     "devDependencies": {
-        "@types/styled-components": "^5.1.25"
+        "@types/styled-components": "^5.1.25",
+        "gh-pages": "^4.0.0"
     }
 }
