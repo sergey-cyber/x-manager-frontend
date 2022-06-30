@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/x-manager-frontend/static/css/main.c93ef8b2.css",
-    "main.js": "/x-manager-frontend/static/js/main.c08c0ec2.js",
+    "main.js": "/x-manager-frontend/static/js/main.f5600a7a.js",
     "static/js/787.9f13aa76.chunk.js": "/x-manager-frontend/static/js/787.9f13aa76.chunk.js",
     "index.html": "/x-manager-frontend/index.html",
     "main.c93ef8b2.css.map": "/x-manager-frontend/static/css/main.c93ef8b2.css.map",
-    "main.c08c0ec2.js.map": "/x-manager-frontend/static/js/main.c08c0ec2.js.map",
+    "main.f5600a7a.js.map": "/x-manager-frontend/static/js/main.f5600a7a.js.map",
     "787.9f13aa76.chunk.js.map": "/x-manager-frontend/static/js/787.9f13aa76.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c93ef8b2.css",
-    "static/js/main.c08c0ec2.js"
+    "static/js/main.f5600a7a.js"
   ]
 }
