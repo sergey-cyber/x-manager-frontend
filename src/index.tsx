@@ -12,7 +12,7 @@ import { SnackbarProvider } from "notistack";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Provider store={store}>
                 <SnackbarProvider maxSnack={5}>
                     <App />
