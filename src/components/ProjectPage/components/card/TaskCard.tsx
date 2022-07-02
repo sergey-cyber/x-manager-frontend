@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Task, TaskFormProps } from "../../../../custom_types/types";
 import { CustomMenu } from "../../../common/CustomMenu";
-import { Card, Tooltip } from "antd";
+import { Card, Tooltip, Typography } from "antd";
 import { TaskIcon } from "../../../common/taskIcon/TaskIcon";
 import { TaskFormData } from "../../schema";
 import { RootState } from "../../../../store/store";
@@ -10,16 +10,24 @@ import { useCallback } from "react";
 import { deleteTask, getTaskByProjectId, updateTask } from "../../../../store/actions/taskActions";
 import { useAsyncDispatch } from "../../../../hooks/useAsyncDispatch";
 import { useSnackbar } from "notistack";
-import { ConfirmModal } from "../../../common/confirm/ConfirmModal";
+
+const { Text } = Typography;
 
 const StyledCard = styled(Card)`
     min-width: 300px;
+    height: 200px;
     margin: 20px;
     border: solid 1px #cdcccc;
-    max-height: 200px;
     & .ant-card-head {
         border-bottom: solid 1px #cdcccc;
     }
+`;
+
+const StyledText = styled(Text)`
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
 `;
 
 interface Props {
@@ -96,7 +104,7 @@ export const TaskCard = ({ task, projectId, setFormProps, setConfirmProps }: Pro
                     />
                 }
             >
-                <p>{task.description}</p>
+                <StyledText>{task.description}</StyledText>
             </StyledCard>
         </>
     );
